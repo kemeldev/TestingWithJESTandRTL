@@ -34,4 +34,9 @@ jest": {
 
   ASSETIONS
     usamos el comando expect(recibe un valor) y ese valor le pasamos una asert function, es decir,
-    algo contra lo que tiene que compararse y revisar si es correcto
+    algo contra lo que tiene que compararse y revisar si es correcto.
+    Hay montones de matchers, algunos comunes serian https://jestjs.io/docs/using-matchers
+
+    Jest incluye una gran variedad de matchers por defecto, pero estos nos estan relacionados con el DOM
+    para tener assertions del DOM hay que descargar el paquete jest-dom, el mismo ya viene incluido en 
+    create-react-app, como parte de testing library, pero habra que ver para otros bundlers

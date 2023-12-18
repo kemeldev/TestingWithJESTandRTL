@@ -11,6 +11,6 @@ test('renders learn react link', () => {
   // renderizamos el app
   render(<App />);
   // usamos la propiedad getbytext que puede recibir un texto o un regex
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByText(/Learn React/i);
   expect(linkElement).toBeInTheDocument();
 });
