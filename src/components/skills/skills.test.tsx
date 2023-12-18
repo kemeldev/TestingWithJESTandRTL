@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import { Skills } from './skills'
+import { Skills } from './Skills'
 
 describe('Skills', () => {
   // el file Skills tiene una funcion de .map aplicada a las propiedades que le pasemos,
@@ -38,6 +38,7 @@ describe('Skills', () => {
   // por defecto el test falla si no encuentra nada luego de 1000ms por esto es que le agregamos el parámetro de timeout, para que 'espere lo que se necesite'
   test('Start Learning button is eventually displayed', async () => {
     render(<Skills skills={skills} />)
+    // screen.debug() // renderiza el dom tree
     const startLearningButton = await screen.findByRole(
       'button',
       {
@@ -47,6 +48,7 @@ describe('Skills', () => {
         timeout: 2000,
       }
     )
+    // screen.debug()
     expect(startLearningButton).toBeInTheDocument()
   })
 })
