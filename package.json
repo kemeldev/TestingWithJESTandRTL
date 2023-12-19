@@ -53,5 +53,14 @@
         "statements": -10
       }
     }
+  },
+  "devDependencies": {
+    "msw": "^2.0.11"
+  },
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true
   }
 }

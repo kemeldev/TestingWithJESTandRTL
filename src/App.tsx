@@ -5,6 +5,8 @@ import { Skills } from './components/skills/Skills';
 import { Counter } from './components/counter/Counter';
 import { AppProviders } from './components/providers/AppProviders';
 import { MuiMode } from './components/mui/MuiMode';
+import { CounterTwo } from './components/counter-two/CounterTwo';
+import { Users } from './components/users/Users';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Application />
         <Skills skills={['HTML', 'CSS']} />
         <Counter />
+        <CounterTwo count={1} />
+        <Users />
         <MuiMode />
         <p>Learn React</p >
       </div >
